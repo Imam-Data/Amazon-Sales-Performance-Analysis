@@ -23,7 +23,7 @@ This project delivers a high-fidelity end-to-end data analysis of **100,000 synt
 ## 4. Repository Structure
 * `Amazon Sales Performance.pbix`: Full Power BI Desktop report.
 * `Amazon Sales Performance.png`: High-resolution dashboard visualization.
-* `amazon_sales_analysis.sql`: Documented SQL script containing schema definitions and business logic queries.
+* `amazon_sales_analysis_queries.sql`: Documented SQL script containing schema definitions and business logic queries.
 
 ## 5. Tools Used
 | Tool | Application |
