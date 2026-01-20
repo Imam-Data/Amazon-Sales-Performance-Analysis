@@ -14,7 +14,7 @@ This project features an end-to-end data pipeline analyzing **100,000 synthetic 
 
 ---
 
-## 📊 Business Insights & Recommendations (The "So What?" Factor)
+##  Business Insights & Recommendations
 
 ### 1. Operational Risk: High Cancellation Rates in Credit Cards
 * **Finding:** My SQL audit revealed that **Credit Card** transactions suffer from the highest cancellation volume (**1,083 orders**).
