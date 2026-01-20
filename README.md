@@ -1,37 +1,36 @@
 # Amazon Sales Performance & Operational Risk Analysis (2020-2024)
 
 ## 1. Project Overview
-Proyek ini melakukan analisis mendalam terhadap **100.000 catatan transaksi e-commerce** yang mensimulasikan perilaku retail online Amazon. Fokus utama proyek ini adalah mengintegrasikan **Database SQL** dengan **Power BI** untuk menghasilkan wawasan strategis mengenai tren pendapatan, dominasi pasar, dan manajemen risiko operasional.
+This project delivers a high-fidelity end-to-end data analysis of **100,000 synthetic Amazon-style e-commerce transactions**. By leveraging a **MySQL-to-Power BI pipeline**, this dashboard provides executive-level insights into fiscal growth trends, category market share, and operational risk mitigation strategies for the 2020-2024 period.
 
-* **Data Source:** [Amazon Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/rohiteng/amazon-sales-dataset).
-* **Dataset Volume:** 100.000 transaksi dengan 20 kolom data terstruktur.
-* **Database Name:** `amazonsalesdb`.
-* **Rentang Data:** Januari 2020 - Desember 2024.
+* **Total Revenue:** $91.83M
+* **Total Orders:** 100,000 transactions
+* **Database Engine:** MySQL Server (`amazonsalesdb`)
+* **Temporal Scope:** January 2020 - December 2024
 
 ## 2. Key Workflow
-1. **Data Ingestion (SQL):** Dataset diimpor ke MySQL. Dilakukan penulisan query untuk agregasi data dan filter status pesanan (Delivered, Cancelled, Returned).
-2. **ETL & Connection:** Menghubungkan Power BI ke MySQL Server (`localhost`) untuk pengambilan data secara efisien.
-3. **Data Modeling:** Membangun relasi antar tabel dan pembuatan *measures* menggunakan DAX untuk menghitung KPI utama.
-4. **Data Visualization:** Mendesain dashboard interaktif dengan tema **Amazon Midnight Premium** (HEX: `#232F3E`, `#FF9900`).
+* **Backend Database Engineering (SQL):** Managed a 100k-record dataset in MySQL, developing optimized queries to analyze revenue fluctuations and categorize order outcomes (Delivered, Cancelled, Returned).
+* **ETL & Integration:** Established a seamless data pipeline from Localhost MySQL to Power BI, utilizing Power Query for data cleaning and structural integrity.
+* **Data Visualization & Analytics:** Engineered a high-fidelity interactive dashboard focusing on executive-level scannability.
 
-## 3. Key Business Insights
-Dashboard ini menyajikan metrik bisnis krusial untuk pengambilan keputusan:
-* **Revenue Performance:** Memantau fluktuasi pendapatan tahunan dari 2020 hingga akhir 2024.
-* **Market Share Distribution:** Kategori **Electronics** dan **Sports & Outdoors** muncul sebagai penyumbang persentase penjualan terbesar.
-* **Operational Risk Analysis:** Identifikasi tingkat pengembalian (*Return*) dan pembatalan (*Cancelled*) berdasarkan metode pembayaran (Credit Card, UPI, COD).
-* **Customer Loyalty & AOV:** Identifikasi Top 5 pelanggan berdasarkan total belanja dan *Average Order Value* (AOV).
+## 3. Strategic Business Insights
+* **Revenue Trend Analysis:** Identified a peak performance in 2020 ($18.53M) and 2023 ($18.51M), with a strategic focus on analyzing the dip in 2024 ($18.17M) to understand market shifts.
+* **Category Intelligence:** **Electronics** leads the market with $15.58M in sales, followed closely by **Sports & Outdoors** ($15.35M) and **Books** ($15.26M).
+* **Operational Risk Audit:** Mapped order failures against payment methods, revealing that **Credit Card** transactions have the highest frequency of cancellations (1,083) and returns.
+* **Customer Loyalty & AOV:** Identified high-value customers such as **Pooja Kapoor** ($0.55M) and **Vihaan Singh**, correlating their total spend with the **Average Order Value (AOV)** to optimize retention programs.
+* **Brand Contribution:** Tracked the top 10 brands, with **Zenith** and **HomeEase** emerging as primary revenue contributors.
 
 ## 4. Repository Structure
-* `Amazon Sales Performance.pbix`: File mentah Power BI.
-* `Amazon Sales Performance.png`: Screenshot dashboard final.
-* `/SQL_Queries`: Folder berisi skrip `.sql` yang digunakan untuk ekstraksi data.
+* `Amazon Sales Performance.pbix`: Full Power BI Desktop report.
+* `Amazon Sales Performance.png`: High-resolution dashboard visualization.
+* `amazon_sales_analysis.sql`: Documented SQL script containing schema definitions and business logic queries.
 
 ## 5. Tools Used
-| Tool | Purpose |
+| Tool | Application |
 | :--- | :--- |
-| **MySQL** | Database Management & Complex SQL Querying |
-| **Power BI** | Data Transformation & Interactive Dashboarding |
-| **Kaggle** | Data Sourcing |
+| **MySQL** | Database Management & Data Extraction |
+| **Power BI** | Data Transformation (Power Query) & Interactive Visuals |
+| **Kaggle** | Raw Data Sourcing for Retail Simulation |
 
 ## Final Dashboard Preview
 ![Amazon Sales Performance](Amazon%20Sales%20Performance.png)
